@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev | npm run setup | ts-node backend/src/server.ts ",
-    "build": "next build",
-    "start": " next start | npm run setup | ts-node backend/src/server.ts ",
+    "dev": "node init && next dev | npm run setup | ts-node backend/src/server.ts ",
+    "build": "node init && next build",
+    "start": "node init &&  next start | npm run setup | ts-node backend/src/server.ts ",
     "lint": "next lint",
     "setup": "node createIcon.mjs"
   },
